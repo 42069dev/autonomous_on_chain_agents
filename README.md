@@ -36,12 +36,13 @@ cd autonomous_on_chain_agents
 npm install
 ```
 
-3. Create the `.env` file and add your OpenAI API key and wallet private key:
+3. Copy the example environment file and fill in your API keys:
 
 ```bash
-OPENAI_API_KEY=your_openai_api_key
-PRIVATE_KEY=your_wallet_private_key
+cp .env.example .env
 ```
+
+Then open the .env file and replace the placeholder values with your actual keys.
 
 4. Run the agent:
 
