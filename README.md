@@ -27,7 +27,7 @@ An AI-powered blockchain agent that can interact with any evm chain. Built with 
 ```bash
 git clone https://github.com/42069dev/autonomous_on_chain_agents.git
 
-cd onchain-agent
+cd autonomous_on_chain_agents
 ```
 
 2. Install dependencies:
