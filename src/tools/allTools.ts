@@ -9,6 +9,11 @@ import { deployErc20Tool } from './deployErc20.js';
 import { uniswapV3CreatePoolTool } from './uniswapV3createPool.js';
 import { approveTokenAllowanceTool } from './approveTokenAllowance.js';
 import { getTokenBalanceTool } from './getTokenBalance.js';
+import { getContractBytecodeTool } from './getContractBytecode.js';
+import { getTransactionCountTool } from './getTransactionCount.js';
+import { getTransactionTool } from './getTransaction.js';
+import { estimateGasTool } from './estimateGas.js';
+import { getGasPriceTool } from './getGasPrice.js';
 
 export interface ToolConfig<T = any> {
     definition: {
@@ -34,7 +39,11 @@ export const tools: Record<string, ToolConfig> = {
     read_contract: readContractTool,
     get_transaction_receipt: getTransactionReceiptTool,
     get_token_balance: getTokenBalanceTool,
-    // get_contract_bytecode: getContractBytecodeTool,
+    get_contract_bytecode: getContractBytecodeTool,
+    get_transaction_count: getTransactionCountTool,
+    get_transaction: getTransactionTool,
+    estimate_gas: estimateGasTool,
+    get_gas_price: getGasPriceTool,
 
     // == WRITE == \\
     send_transaction: sendTransactionTool,
